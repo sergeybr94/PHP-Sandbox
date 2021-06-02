@@ -2,9 +2,6 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/rest/app" isTestSource="false" packagePrefix="App\" />
-      <sourceFolder url="file://$MODULE_DIR$/rest/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
-      <sourceFolder url="file://$MODULE_DIR$/rest/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/rest/vendor/opis/closure" />
@@ -114,6 +111,15 @@
       <excludeFolder url="file://$MODULE_DIR$/rest/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/rest/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/rest/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/rest/vendor/classpreloader/classpreloader" />
+      <excludeFolder url="file://$MODULE_DIR$/rest/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/rest/vendor/flipbox/lumen-generator" />
+      <excludeFolder url="file://$MODULE_DIR$/rest/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/rest/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/rest/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/rest/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/rest/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/rest/vendor/psr/http-message" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

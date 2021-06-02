@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Artisan;
 use Laravel\Lumen\Http\Request;
 use Laravel\Lumen\Routing\Controller as BaseController;
 
@@ -16,8 +17,12 @@ class PHPController extends BaseController
     {
         $json = $request->json()->all();
 
-        dump($json);
+        Artisan::call("php-runner:execute", ['code' => $json['code']]);
 
-        return response()->json([]);
+        $result = [
+            'result' => Artisan::output()
+        ];
+
+        return response()->json($result);
     }
 }

@@ -10,6 +10,14 @@ services:
             - ./:/var/www
         networks:
             - app-network
+    php-sandbox:
+        build: .
+        container_name: php-sandbox
+        working_dir: /var/www/
+        volumes:
+            - ./sandbox:/var/www
+        networks:
+            - isolated-network
 
     # MySQL database service
     db:
@@ -37,9 +45,13 @@ services:
         volumes:
             - ./:/var/www
             - ./nginx/conf.d/:/etc/nginx/conf.d/
+            - ./nginx/logs/:/var/log/nginx/
         networks:
             - app-network
+            - isolated-network
 
 networks:
     app-network:
+        driver: bridge
+    isolated-network:
         driver: bridge

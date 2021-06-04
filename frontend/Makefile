@@ -1,4 +1,4 @@
-.PHONY: build serve
+.PHONY: install build serve
 install:
 	npm install
 

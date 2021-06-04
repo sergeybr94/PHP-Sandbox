@@ -4,8 +4,6 @@ down:
 	docker-compose down -v
 sh:
 	docker-compose exec app bash
-shrest:
-	docker-compose exec app bash cd rest
 restart: down up
 nginx-restart:
 	docker-compose restart nginx
